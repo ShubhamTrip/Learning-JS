@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <h1 id='head1'>Heading 1</h1>
+
+      <script>
+        var a =  document.getElementById('head1');
+        a.setAttribute("class","hello");
+        console.log(a);
+
+        var b=a.getAttribute("id");
+        console.log(b);    // head1
+
+        var c= a.hasAttribute("id");
+        console.log(c);    // true
+
+        var d = a.hasAttribute("fl");
+        console.log(d);    // false
+      </script>
+  </body>
+</html>

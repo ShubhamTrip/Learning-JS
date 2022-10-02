@@ -1,0 +1,22 @@
+body{
+  padding: 50px 100px;
+  text-align: center;
+}
+
+.Calc{
+  padding: 50px;
+  text-align: center;
+  background-color: cyan;
+}
+
+.temp{
+  padding: 20px;
+  display: inline-block;
+}
+
+.temp input{
+  height: 10px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Temprature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+     <div class="">
+         <h1>Temperature Convertor</h1>
+     </div>
+     <div class="Calc">
+          <div class='temp'>
+              <label>Celcius</label>
+              <input id='celInput' type="number" name="cel" value="0">
+          </div>
+          <div class="temp">
+              <label>Farenhite</label>
+              <input id='farenInput' type="number" name="far" value="32">
+          </div>
+     </div>
+
+     <script>
+         var cel = document.getElementById('celInput');
+         var fen = document.getElementById('farenInput');
+
+         cel.addEventListener('input',celfunc);
+         fen.addEventListener('input',fenfunc);
+         function celfunc(){
+           var c = this.value;
+            var f = (c*(9/5))+32;
+            if(!Number.isInteger(f)){
+              f =  f.toFixed(4);
+            }
+            fen.value = f;
+         }
+         function fenfunc(){
+           var f = this.value;
+            var c = (f-32)*5/9;
+            if(!Number.isInteger(c)){
+              c =  c.toFixed(4);
+            }
+            cel.value = c;
+         }
+
+
+     </script>
+  </body>
+</html>

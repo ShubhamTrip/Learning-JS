@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <h1 id="head">Heading 1</h1>
+      <h1>Heading 2</h1>
+
+      <div id='list'>
+         <p>Item 1</p>
+         <p>Item 2</p>
+         <p>Item 3</p>
+      </div>
+
+      <script>
+          var a=document.getElementById('head');
+          var b= document.createElement('h1');
+          b.innerHTML="HELLO";
+           a.parentElement.append(b);
+
+        //var a= document.querySelectorAll('p');
+        // Access a obj using loop and change ..
+
+         a.nextElementSibling.innerText="ADED";
+         var c = document.getElementById('list');
+         console.log(c.previousElementSibling);
+
+         b.style="color:red";
+
+         var ls = document.getElementById('list');
+        // ls.removeChild(ls.firstElementChild);  removes list 1
+
+        var ele = document.createElement('li');
+        ele.innerHTML="New List Item";
+        ele.style ="color:blue";
+
+        ls.appendChild(ele);
+
+      //  ls.replaceChild(ele,ls.firstElementChild);
+      </script>
+  </body>
+</html>
