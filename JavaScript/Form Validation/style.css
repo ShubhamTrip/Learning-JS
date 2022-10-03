@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    color: white;
+    background-color: blue;
+}
+
+.form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 80px 20px 40px 20px;    
+}
+
+.fields{margin: 20px 50px;}
+
+.inputs{
+    width: 200px;
+    padding: 10px;
+}
+
+#submit{
+    margin-top: 20px;
+    width:225px;
+    background-color: rgb(40, 40, 247);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+#errorUser, #errorPass{
+    padding: 0;
+    margin: 0;
+    color: red;
+    text-align: left;
+}
+
