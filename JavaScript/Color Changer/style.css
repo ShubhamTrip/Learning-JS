@@ -1,0 +1,44 @@
+body{
+  padding: 50px 200px;
+  text-align: center;
+}
+
+.box{
+  background-color: lightpink;
+  height: 500px;
+}
+
+#textArea{
+  background-color: lightgrey;
+  height: 260px;
+  resize: none;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn{
+  display: inline-block;
+  height: 50px;
+  width : 50px;
+  border: solid;
+  border-radius: 100%;
+  margin: 10px;
+
+}
+#yellow{
+  background-color: yellow;
+
+}
+
+#pink{
+  background-color: lightpink;
+}
+
+#cyan{
+  background-color: cyan;
+}
